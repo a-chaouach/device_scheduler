@@ -8,4 +8,4 @@ This program makes use of:
 - time library (import time)
 
 ## Additional notes
-I did not manage to replicate the exact behavior given on the paper. Despite having taken into account the given constraints, I am unsure of why only task A runs after the first second.Task B should be able to run as well. Anyway, I hope the code is clear and thouroughly explained! Enjoy :) 
+I did not manage to replicate the exact behavior given on the paper. Despite having taken into account the given constraints, I am unsure of why only task A runs after the first second.Task B should be able to run as well. Anyway, I hope the code is clear and thoroughly explained! Enjoy :) 
