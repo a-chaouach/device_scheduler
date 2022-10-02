@@ -16,7 +16,7 @@ class Task:
         Args:
             period (int): period in time units between each execution.
             task_letter (char): Task letter.
-            first_run (bool, optional): Says whether initial execution before first periodl is allowed.Defaults to True.
+            first_run (bool, optional): Says whether initial execution before first period is allowed.Defaults to True.
         """        
         self.period = period
         self.time_since_last_exec = 0
@@ -58,9 +58,9 @@ def main():
             #Increments the time for each task.
             task.inc_last_time_exec()
 
-            #Makes sure that no more than two tasks are scheduled for running #at the same time.
+            #Makes sure that no more than two tasks are scheduled for running at the same time.
             if len(scheduled_tasks)<2:
-                #Simple check whether we're at new period or the task can be #run regardless (B,C,D,E).
+                #Simple check whether we're at new period or the task can be run regardless (B,C,D,E).
                 if task.time_since_last_exec>=task.period or task.first_run:
                         scheduled_tasks.append(task.task_letter)
                         task.reset_time()
